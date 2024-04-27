@@ -1,0 +1,212 @@
+@import "utilities.css";
+
+/* *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} */
+/* body{
+    font-family: var(--font);
+}
+
+nav{
+    background: var(--second-color);
+    height: 80px;
+    width:100%;
+}
+img{
+    padding: 0 100px;
+    width: 50px;
+    height: auto;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+
+/* HEADER */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5rem;
+    /* padding: 25px 90px; */
+    background-color: var(--second-color);
+}
+
+.logo img{
+    width: 180px;
+    height: auto;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li{
+    margin: 0 15px;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.navbar a.active {
+    color: var(--main-color);
+   
+}
+.lime{
+    background-color: var(--main-color);
+    color: var(--second-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.navbar ul li.lime a {
+    color: var(--second-color);
+    font-size: 24px;
+    /* font-weight: 900; */
+}
+.navbar ul li.lime {
+    margin-left: 70px;
+}
+
+/* MAIN */
+
+
+
+/* PARTE COM A IMAGEM DO HOMEM */
+.principal{
+    color: rgba(247, 247, 247, 0.75);
+    background-color: var(--second-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    margin-top: 0;
+    /* height: 500px; */
+    /* text-align: center; */
+    /* vertical-align: baseline; */
+    /* position: relative; */
+}
+.principal span{
+    color: rgba(204, 254, 6, 0.90);
+}
+.texto p{
+    word-wrap: break-word;
+    font-weight: 900;
+}
+.texto{
+    padding: 15px;
+    margin: 15px;
+    /* vertical-align: middle; */
+    /* align-items: first baseline; */
+}
+
+.card-homem{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 0px 15px;
+    position: relative;
+    top: 200px;
+    /* display: flex;
+    justify-content: center; */
+    /* position: absolute; */
+}
+.card-homem img{
+    width: 661px;
+    position: relative;
+	left:5%;
+	top: 70%;
+    padding: 0px 15px;  
+    vertical-align: middle;
+    /* place-items: end; */
+    /* position: absolute; */
+}
+
+.section-1{
+    position: relative;
+}
+
+/* PARTE COM A IMAGEM DA MULHER */
+
+.section-2{
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* margin: 15px; */
+}
+.card-mulher{
+    padding: 0;
+    margin: 0;
+}
+
+.card-mulher img {
+    width: 820px;
+    /* position: absolute; */
+    position: relative;
+    /* margin: 15px; */
+    /* display: inline-flex; */
+}
+
+.card-mulher .test{
+    width: 700px;
+    height: 849px;
+    border-radius: 10px;
+    border: 6px solid var(--main-color);
+    margin: 45px;
+    /* position: relative; */
+    position: absolute;
+	top: 1115px;
+    padding: 0px 15px;  
+    vertical-align: middle;
+}
+
+.sobre-nos .line {
+    width: 600px;
+    border: 2px solid var(--second-color);
+    /* height: 2px;
+    background-color: black; */
+}
+
+.sobre-nos{
+    padding: 45px;
+    margin-top: 200px;
+}
+
+.sobre-nos h1{
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sobre-nos h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.sobre-nos p{
+    font-size: 24px;
+    text-align: justify;
+}
+.sobre-nos button{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+    justify-content: flex-end;
+    /* align-items:; */
+    /* right: 10%; */
+}
