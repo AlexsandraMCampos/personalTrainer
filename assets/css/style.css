@@ -1,0 +1,185 @@
+@import "utilities.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+main {
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    /* height: 100%; */
+    /* margin-top: 77px; */
+}
+/* HEADER */
+.navbar{
+    align-items: center;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 2rem;
+}
+
+.logo img{
+    height: auto;
+    width: 180px;
+}
+
+.navbar a{
+    color: var(--third-color);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul a.active {
+    color: var(--main-color);
+   
+}
+.navbar ul li{
+    margin: 0 15px;
+}
+
+.navbar ul li.lime {
+    margin-left: 90px;
+}
+
+.navbar ul li.lime a {
+    color: var(--second-color);
+    font-size: 20px;
+}
+
+.lime{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--second-color);
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+/* PARTE COM A IMAGEM DO HOMEM */
+.section-1{
+    position: relative;
+}
+.principal{
+    background-color: var(--second-color);
+    display: flex;
+    font-size: 35px;
+    height: 65vh;
+    margin-top: 0;
+    justify-content: space-evenly;
+    place-items: center;
+    text-transform: uppercase;
+}
+.texto{
+    color: rgba(247, 247, 247, 0.75);
+    font-weight: 900;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.texto p span{
+    color: rgba(204, 254, 6, 0.90);
+}
+
+.card-homem {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px 15px;
+    position: relative;
+    top: 70px;
+    z-index: 9;
+}
+
+.card-homem img{
+    /* width: 561px; */
+    width: 45vw;
+    /* width: 70%; */
+    height: auto;
+    position: relative;
+	left:5%;
+	top: 70%;
+    vertical-align: middle;
+}
+
+.section-2{
+    align-items: center;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 160vh;
+}
+
+.card-mulher img {
+    /* width: 650px; */
+    width: 50vw;
+    position: relative;
+    top: -590px;
+}
+
+.card-mulher .green-border{
+    width: 40vw;
+    /* width: 540px; */
+    height: 85vh;
+    /* height: 705px; */
+    border-radius: 10px;
+    border: 6px solid var(--main-color);
+    margin-left: 45px;
+    padding: 0px 15px; 
+    position: relative;
+	top: 315px; 
+    vertical-align: middle;
+}
+
+.sobre-nos .line {
+    border: 2px solid var(--second-color);
+    width: 530px;
+}
+
+.sobre-nos{
+    padding: 45px;
+    /* margin-top: 200px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: justify;
+    position: relative;
+    top: -150px;
+}
+
+.sobre-nos h1{
+    font-size: 43px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sobre-nos h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.sobre-nos .btn{
+    display: flex;
+}
+.sobre-nos .btn button{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    width: 180px;
+    height: 50px;
+    margin-left: 350px;
+}
