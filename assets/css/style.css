@@ -199,8 +199,11 @@
     /* margin-left: 350px; */
 }
 
+/* AULAS */
+
 .section-3{
     background-color: var(--second-color);
+    min-height: 750px;
 }
 
 .aulas{
@@ -209,22 +212,24 @@
 .aulas h1{
     color: var(--main-color);
     text-transform: uppercase;
-    font-size: 40px;
-
+    font-size: 45px;
+    padding: 40px;
 }
 .aulas p{
     color: var(--third-color);
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .cards{
     /* padding: 10px; */
-	margin: 50px;
+	/* margin: 50px; */
+    padding: 50px;
     background-color: var(--second-color);
     /* align-items: center;
     justify-content: center; */
     justify-content: space-around;
     display: flex;
+    /* padding-bottom: 20px; */
     /* gap: 50px; */
 }
 .card {
