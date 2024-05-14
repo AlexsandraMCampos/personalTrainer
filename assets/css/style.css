@@ -1,36 +1,14 @@
 @import "utilities.css";
 
-/* *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-} */
-/* body{
-    font-family: var(--font);
-}
-
-nav{
-    background: var(--second-color);
-    height: 80px;
-    width:100%;
-}
-img{
-    padding: 0 100px;
-    width: 50px;
-    height: auto;
-} */
-
 *{
     margin: 0;
     padding: 0;
     font-family: var(--font);
     box-sizing: border-box;
 }
-body{
-    background-color: var(--second-color);
-}
+
+
+/* HEADER */
 
 .navbar{
     display: flex;
@@ -41,12 +19,7 @@ body{
     background-color: var(--second-color);
 }
 
-/* .navbar > img{
-    width: 180px;
-    height: auto;
-} */
-
-header img{
+.logo img{
     width: 180px;
     height: auto;
 }
@@ -55,6 +28,7 @@ header img{
     align-items: center;
     list-style: none;
 }
+
 .navbar ul li{
     margin: 0 15px;
 }
@@ -62,25 +36,171 @@ header img{
 .navbar ul a{
     text-decoration: none;
     color: var(--third-color);
-    font-size: 17px;
+    font-size: 24px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .navbar a.active {
     color: var(--main-color);
-   
 }
+
+.navbar ul li{
+    margin: 0 15px;
+}
+
 .lime{
     background-color: var(--main-color);
     color: var(--second-color);
     padding: 10px 20px;
     border-radius: 10px;
-    
 }
 .navbar ul li.lime a {
     color: var(--second-color);
+    font-size: 20px;
+    text-transform: uppercase;
+   /* font-weight: 900; */
 }
-.navbar ul li.lime {
-    margin-left: 70px;
+
+/* MAIN */
+
+/* PARTE COM A IMAGEM DO HOMEM */
+.principal{
+    color: rgba(247, 247, 247, 0.75);
+    background-color: var(--second-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    place-items: center;
+    margin-top: 0;
+    /* height: 500px; */
+    /* text-align: center; */
+    /* vertical-align: baseline; */
+    /* position: relative; */
+}
+.principal span{
+    color: rgba(204, 254, 6, 0.90);
+}
+.texto{
+    padding: 15px;
+    margin: 15px;
+    /* vertical-align: middle; */
+    /* align-items: first baseline; */
+}
+.texto p{
+    word-wrap: break-word;
+    font-weight: 900;
+}
+
+
+.card-homem{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 0px 15px;
+    position: relative;
+    top: 200px;
+    /* display: flex;
+    justify-content: center; */
+    /* position: absolute; */
+}
+.card-homem img{
+    width: 661px;
+    position: relative;
+	left:5%;
+	top: 70%;
+    padding: 0px 15px;  
+    vertical-align: middle;
+    /* place-items: end; */
+    /* position: absolute; */
+}
+
+.section-1{
+    position: relative;
+}
+
+/* PARTE COM A IMAGEM DA MULHER */
+
+.section-2{
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* margin: 15px; */
+}
+.card-mulher{
+    padding: 0;
+    margin: 0;
+}
+
+.card-mulher img {
+    width: 820px;
+    /* position: absolute; */
+    position: relative;
+    /* margin: 15px; */
+    /* display: inline-flex; */
+}
+
+.card-mulher .card-line{
+    width: 700px;
+    height: 849px;
+    border-radius: 10px;
+    border: 6px solid var(--main-color);
+    margin: 45px;
+    /* position: relative; */
+    position: absolute;
+	top: 1115px;
+    padding: 0px 15px;  
+    vertical-align: middle;
+}
+
+.sobre-nos .line {
+    width: 600px;
+    border: 2px solid var(--second-color);
+    /* height: 2px;
+    background-color: black; */
+}
+
+.sobre-nos{
+    padding: 45px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+}
+
+.sobre-nos h1{
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sobre-nos h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.sobre-nos p{
+    font-size: 24px;
+    text-align: justify;
+}
+
+.sobre-nos .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.sobre-nos .btn button{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    width: 180px;
+    height: 50px;
+    /* margin-left: 350px; */
+}
+
+.section-3{
+    background-color: var(--second-color);
 }
 
 .aulas{
