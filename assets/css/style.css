@@ -1,5 +1,4 @@
 @import "utilities.css";
-
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@
 
 /* HEADER */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +22,7 @@
     width: 180px;
     height: auto;
 }
+
 .navbar ul {
     display: flex;
     align-items: center;
@@ -48,7 +48,21 @@
     margin: 0 15px;
 }
 
-.lime{
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 17px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.lime {
+
     background-color: var(--main-color);
     color: var(--second-color);
     padding: 10px 20px;
@@ -292,4 +306,142 @@
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+}
+
+footer{
+    background-color: var(--main-color);
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* text-align: center; */
+    /* align-items: center;  */
+    /* justify-content: center; */
+    /* box-sizing: border-box; */
+}
+.logo-footer{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+
+.container{
+    display: flex;
+    /* margin-top: 10px; */
+    flex-direction: column; /* Alterado para uma direção de coluna */
+    align-items: center; 
+    /* justify-content: space-around; */
+    padding-bottom: 20px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    /* column-count: 3; */
+    column-gap: 120px; 
+}
+
+.column{
+    /* margin-bottom: 35px; */
+	font-weight: 500;
+    
+}
+.column h3{
+    /* margin-bottom: 15px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.column p{
+    font-size: 24px;
+}
+
+/* .imagem{
+    display: inline-block; */
+	/* line-height: 40px; */
+    
+/* } */
+
+.imagem {
+    display: flex; /* Alterado para flex para usar margens */
+}
+
+.imagem img {
+    margin: 0 25px; /* Adiciona margem entre as imagens */
+}
+
+
+/* footer {
+    display: flex;
+    flex-flow: row wrap;
+    flex-flow: column wrap;
+    background-color: var(--main-color);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-footer img{
+    width: 200px;
+}
+
+.column{
+    column-count: 3;
+    box-sizing: border-box;
+    column-gap: 90px;
+}
+
+.column h3{
+    text-transform: uppercase;
+}
+
+#imagem{
+    width: 10px;
+} */
+
+.end {
+    background-color: var(--second-color);
+    color: var(--third-color);
+    /* display: inline-block; */
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between; /* Adicionado */
+    /* align-items: center; */
+
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap; */
+}
+
+.end span{
+    color: var(--main-color);
+}
+
+.end-nome{
+    display: flex;
+    /* justify-content: center; */
+    gap: 30px;
+    padding-left: 65px;
+}
+
+.end-bolinha{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    padding-right: 65px;
+}
+
+.marker-green{
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: var(--main-color);
+    
 }
