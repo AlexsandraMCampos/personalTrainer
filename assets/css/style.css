@@ -67,6 +67,26 @@
 
 /* MAIN */
 
+.container{
+    display: grid;
+    gap: 0px;
+    grid-template-areas:
+    "section-1"
+    "section-2";
+    /* grid-template-rows: 300px 1500px; */
+    /* "grid-card-homem"
+    "grid-card-mulher"; */   
+}
+
+.section-1{
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-area: section-1;
+    grid-template-rows: 500px;
+}
+
 /* PARTE COM A IMAGEM DO HOMEM */
 .principal{
     color: rgba(247, 247, 247, 0.75);
@@ -74,10 +94,12 @@
     text-transform: uppercase;
     font-size: 40px;
     display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     justify-content: space-evenly;
+    /* justify-content: center; */
     align-items: center;
-    place-items: center;
-    margin-top: 0;
+    gap: 100px;
     /* height: 500px; */
     /* text-align: center; */
     /* vertical-align: baseline; */
@@ -89,6 +111,7 @@
 .texto{
     padding: 15px;
     margin: 15px;
+    margin-left: auto;
     /* vertical-align: middle; */
     /* align-items: first baseline; */
 }
@@ -101,9 +124,11 @@
 .card-homem{
     background-color: var(--main-color);
     border-radius: 20px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     position: relative;
-    top: 200px;
+    margin-right: auto;
+    top: 120px;
+    z-index: 9;
     /* display: flex;
     justify-content: center; */
     /* position: absolute; */
@@ -119,27 +144,32 @@
     /* position: absolute; */
 }
 
-.section-1{
-    position: relative;
-}
-
 /* PARTE COM A IMAGEM DA MULHER */
 
 .section-2{
     background-color: var(--third-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    grid-area: section-2;
+    grid-template-rows: 1000px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
     /* position: absolute; */
     /* margin: 15px; */
 }
 .card-mulher{
     padding: 0;
-    margin: 0;
+    margin-top: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+
 }
 
 .card-mulher img {
-    width: 820px;
+    width: 720px;
     /* position: absolute; */
     position: relative;
     /* margin: 15px; */
@@ -147,31 +177,35 @@
 }
 
 .card-mulher .card-line{
-    width: 700px;
-    height: 849px;
+    width: 600px;
+    height: 760px;
     border-radius: 10px;
     border: 6px solid var(--main-color);
-    margin: 45px;
+    margin-right: 60px;
     /* position: relative; */
     position: absolute;
-	top: 1115px;
-    padding: 0px 15px;  
-    vertical-align: middle;
+	/* top: 1115px; */
+    /* vertical-align: middle; */
 }
 
+.sobre-nos{
+    /* padding: 45px; */
+    margin-top: 260px;
+    /* margin-left: auto; */
+    margin-right: auto;
+    /* margin-left: auto; */
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-self: start;
+    width: 600px;
+    /* position: relative; */
+}
 .sobre-nos .line {
     width: 600px;
     border: 2px solid var(--second-color);
     /* height: 2px;
     background-color: black; */
-}
-
-.sobre-nos{
-    padding: 45px;
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    /* position: relative; */
 }
 
 .sobre-nos h1{
@@ -316,7 +350,7 @@ footer{
     padding-top: 70px;
 }
 
-.container{
+.container-footer{
     display: flex;
     /* margin-top: 10px; */
     flex-direction: column; /* Alterado para uma direção de coluna */
