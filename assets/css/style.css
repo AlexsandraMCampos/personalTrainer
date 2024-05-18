@@ -19,7 +19,7 @@
 }
 
 .logo img{
-    width: 180px;
+    width: 200px;
     height: auto;
 }
 
@@ -38,7 +38,6 @@
     color: var(--third-color);
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .navbar a.active {
     color: var(--main-color);
@@ -46,15 +45,6 @@
 
 .navbar ul li{
     margin: 0 15px;
-}
-
-
-.navbar ul a {
-    text-decoration: none;
-    color: var(--third-color);
-    font-size: 17px;
-    font-weight: bold;
-    /* text-transform: uppercase; */
 }
 
 .navbar a.active {
