@@ -393,3 +393,13 @@ footer {
     background-color: var(--main-color);
 
 }
+
+@media (max-width:600px){
+
+.container{
+      grid-template-areas: 1fr;
+}
+
+
+
+}
