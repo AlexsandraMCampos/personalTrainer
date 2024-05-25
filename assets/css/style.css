@@ -397,6 +397,7 @@ footer {
 @media (max-width:600px){
 
 .container{
+    background-color: red;
       grid-template-areas: 1fr;
 }
 
