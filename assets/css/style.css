@@ -215,8 +215,6 @@
   min-height: 750px;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
 .aulas {
@@ -397,15 +395,19 @@ footer {
 /* /Responsividade */
 
 @media (max-width: 600px) {
- 
   * {
     font-size: 15px;
+  }
 
+  nav{
+    border: 1px solid #fff;
   }
   /* cor de fundo do site inteiro */
-  body .section-1,
+  body,
+  .section-1,
   .section-2,
-  .section-3, .aulas{
+  .section-3,
+  .aulas {
     background-color: var(--second-color);
   }
 
@@ -419,9 +421,17 @@ footer {
   .section-3 {
     display: grid;
     grid-template-columns: 2fr;
-justify-content: center;
+    justify-content: center;
     align-items: center;
   }
+
+
+  .section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   .card-homem,
   .card-mulher,
@@ -474,7 +484,16 @@ justify-content: center;
     align-items: center;
   }
 
-
-
-
+  .card-homem {
+    top: 0px;
+    width: 288px;
+  }
+  
+  .card-homem img {
+    width: 280px;
+    height: 350px;
+    left: 5%;
+    top: 70%;
+    padding: 0px 15px;
+    
 }
