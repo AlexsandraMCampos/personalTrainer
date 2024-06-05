@@ -399,9 +399,19 @@ footer {
     font-size: 15px;
   }
 
-  nav{
+  nav {
     border: 1px solid #fff;
   }
+  /* .section-1 {
+    border: 1px solid #fff;
+  } */
+  .section-2 {
+    border: 1px solid #fff;
+  }
+  .section-3 {
+    border: 1px solid #fff;
+  }
+
   /* cor de fundo do site inteiro */
   body,
   .section-1,
@@ -417,21 +427,18 @@ footer {
   }
 
   .principal,
-  .section-2,
-  .section-3 {
+  .section-2{
     display: grid;
     grid-template-columns: 2fr;
     justify-content: center;
     align-items: center;
   }
 
-
-  .section-1{
+  .section-1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 
   .card-homem,
   .card-mulher,
@@ -442,19 +449,21 @@ footer {
   }
 
   .sobre-nos {
+    width: 300px;
     grid-row: 2;
     color: var(--third-color);
-    margin-top: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: -400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
   }
 
   .sobre-nos .line {
     display: flex;
-    width: 150px;
+    margin: auto;
+    align-items: center;
+    width: 150px;   
     border: 1px solid var(--third-color);
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .sobre-nos h1 {
@@ -465,8 +474,21 @@ footer {
     font-size: 20px;
   }
 
-  .card-mulher {
-    margin-top: 1500px;
+  /* sessão-2 */
+  .card-mulher img {
+    width: 280px;
+    margin-top: -1100px;
+    margin-right: 40px;
+  }
+
+  .card-mulher .card-line {
+    padding: 50px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: -6px;
+    width: 300px;
+    height: 350px;
   }
 
   p span,
@@ -477,10 +499,10 @@ footer {
   .texto {
     margin-left: auto;
     margin-right: auto;
+    margin-top: -100px;
   }
 
   img {
-    width: 80%;
     align-items: center;
   }
 
@@ -488,12 +510,38 @@ footer {
     top: 0px;
     width: 288px;
   }
-  
+
   .card-homem img {
     width: 280px;
-    height: 350px;
-    left: 5%;
-    top: 70%;
-    padding: 0px 15px;
-    
+  }
+
+/* section-3 */
+
+.section-3 {
+  width: 350px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.aulas h1 {
+    font-size: 30px;
+}
+
+.aulas p {
+  font-size: 24px;
+  width: 300px; 
+}
+
+.cards {
+  padding: 50px;
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  width: 280px;
+}
+
+
 }
