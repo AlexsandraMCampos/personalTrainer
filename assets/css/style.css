@@ -405,12 +405,12 @@ footer {
   /* .section-1 {
     border: 1px solid #fff;
   } */
-  .section-2 {
+  /* .section-2 {
     border: 1px solid #fff;
   }
   .section-3 {
     border: 1px solid #fff;
-  }
+  } */
 
   /* cor de fundo do site inteiro */
   body,
@@ -536,12 +536,13 @@ footer {
   padding: 50px;
   gap: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .card {
   width: 280px;
-}
 
+}
+ 
 
 }
